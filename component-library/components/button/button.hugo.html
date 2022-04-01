@@ -1,0 +1,10 @@
+{{ if .link_url}}
+<a class="{{ .class }}" href="{{ .link_url }}">{{ .label }}</a>
+{{ else }}
+
+{{ $class := "px-6 py-2 rounded bg-gray-100" }}
+{{ if .class }}
+    {{ $class = .class }}
+{{ end }}
+<button class="{{ $class }}">{{ .label }}</button>
+{{ end }}

@@ -1,0 +1,11 @@
+[component]
+structures = []
+label = "button"
+description = "A simple button"
+icon = "smart_button"
+tags = []
+
+[props]
+label = "Button Action Label"
+link_url = "https://google.com"
+class = "Custom CSS classes"

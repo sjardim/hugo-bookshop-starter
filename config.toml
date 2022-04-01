@@ -1,7 +1,12 @@
-baseURL = "http://example.org/"
+baseURL = "http://example.org"
 languageCode = "en-us"
-title = "Hugo Bookshop Starter"
-_enabled_editors = ["visual", "content"]
+title = 'Hugo & Tailwind 3.0'
+disableKinds = ["taxonomy","taxonomyTerm"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true #to accept HTML
 
 [module]
 replacements = "local/component-library -> ../component-library"

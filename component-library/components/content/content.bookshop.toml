@@ -6,6 +6,5 @@ icon = "wysiwyg"
 tags = ["Text"]
 
 [props]
-content_html = "<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>"
-type.select = ["standard", 'note']
-type.default = "standard"
+content_html = "<p>Praesent commodo cursus <strong>magna</strong>, vel scelerisque nisl consectetur et.</p>"
+class = "Custom CSS classes"

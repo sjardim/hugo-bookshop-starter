@@ -2,6 +2,13 @@
   "name": "hugo-bookshop-starter",
   "private": true,
   "description": "A starter template for Hugo with Bookshop",
+  "scripts": {
+    "start": "concurrently npm:watch:*",
+    "watch:styles": "npx tailwindcss -i ./assets/css/src/tailwind.css -o ./assets/css/styles.css --watch",
+    "watch:bookshop": "npx tailwindcss -i ./assets/css/src/tailwind.css -o ./component-library/shared/styles/global.scss --watch",
+    "watch:hugo": "hugo server",
+    "build": "hugo --minify"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CloudCannon/hugo-bookshop-starter.git"
@@ -16,7 +23,9 @@
     "@bookshop/browser": "2.6.0",
     "@bookshop/generate": "2.6.0",
     "@bookshop/hugo-engine": "2.6.0",
-    "liquidjs": "9.28.0"
+    "liquidjs": "9.28.0",
+    "@tailwindcss/typography": "^0.5.1",    
+    "concurrently": "^7.0.0"
   },
   "dependencies": {
     "fast-glob": "^3.2.7"
